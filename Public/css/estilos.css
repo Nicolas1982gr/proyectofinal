@@ -1,0 +1,278 @@
+/** para todos los documentos**/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: rgb(157, 214, 214);
+}
+
+img{
+    border-radius: 15px;
+}
+
+/* solo header */
+
+header{
+    padding: 90px;
+    text-align: center;
+    background-image: url(../img/pantalla-computadora-casco-dibujo-casco-el_867442-6593.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+header div{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: hsl(0, 0%, 100%);
+    font-size: 1.1rem;
+}
+@media (max-width: 900px) {
+    header{
+        background-position: center;
+    }   
+    header{
+        text-align: center;
+    }
+}
+
+/* ESTILOS NAVBAR*/
+.nabvar{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(67, 36, 243);
+    position: sticky;
+    top: 0;
+    border-radius: 5px;
+}
+.nabvar a{
+    color: bisque;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+.nabvar a:hover{
+  background-color: aliceblue;
+  color: black;
+}
+@media (max-width: 900px) {
+    .nabvar{
+        flex-direction: column;
+        position: unset;
+    }
+    .nabvar{
+        text-align: center;
+    }
+}
+
+/* parte principal */
+.Principal{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width: 900px) {
+    .Principal{
+        flex-direction: column;
+        position: unset;
+    }
+    .Principal{
+        text-align: center;
+    }
+}
+aside{
+    flex-basis: 20%;
+    height: 500 px;
+    background-color: rgb(219, 199, 199); 
+    border-radius: 10px;  
+    padding: 8px 8px 8px 8px;
+}
+.image img{
+    width: 95%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    
+}
+main{
+    flex-basis: 80%;
+    background-color: darkslategrey;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+footer{
+    background-color: rgb(243, 243, 91);
+    text-align: center;
+    padding: 20px;
+    margin: 5px 5px 5px 5px;
+    border-radius: 10px;
+}
+
+/** PARA FORMULARIO REGISTRO**/
+
+/**.form1{
+    display: grid;
+    grid-template-columns: 10vw 10vw;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    gap: 10px;
+    margin: auto;
+    width: fit-content;
+    font-size: 1.2rem;
+    border: 3px double rgb(67, 36, 243);
+}**/
+
+.Formu2{
+    background-color: rgba(169, 245, 169, 0.4);
+    border-radius: 10px;
+}
+
+/*label{
+ background-color: rgb(33, 247, 165);
+ padding: 4px;
+ margin: 5px 5px 5px 5px;
+ border-radius: 10px;
+ border-color: blue;
+}
+@media (max-width: 900px) {
+    .Formu2{
+        flex-direction: column;
+        position: unset;
+    }
+    .form{
+        text-align: center;
+    }
+}*/
+
+
+/* Parte principal Obras en ejecucion */
+
+.OAEJ{
+    flex-basis: 50%;
+    height: 700 px;
+    background-color: rgba(65, 47, 47, 0.4); 
+    border-radius: 10px;  
+    padding: 15px 15px 15px 15px;
+}
+
+
+.OAEJ1{
+    flex-basis: 50%;
+    height: 700 px;
+    background-color: rgba(65, 47, 47, 0.4); 
+    border-radius: 10px;
+    border-color: brown;  
+    padding: 15px 15px 15px 15px;
+}
+
+/* Parte principal por ejecutarce  */
+
+.OPEJ{
+    flex-basis: 50%;
+    height: 700 px;
+    background-color: rgba(123, 219, 144, 0.4); 
+    border-radius: 10px;  
+    padding: 8px 8px 8px 8px;
+}
+
+
+.OPEJ1{
+    flex-basis: 50%;
+    height: 700 px;
+    background-color: rgba(123, 219, 144, 0.4); 
+    border-radius: 10px;  
+    padding: 8px 8px 8px 8px;
+}
+
+/*SOLO REGISTRO*/
+
+.form-signin {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    background: rgba(21, 5, 238, 0.05);
+    backdrop-filter: blur(20px);
+    border-top: 10px solid rgba(5, 1, 22, 0.2);
+    border-left: 10px solid rgba(5, 1, 22, 0.2);
+    border-right: 10px solid rgba(5, 1, 22, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    align-items: center;
+ }
+  .form-signin h1 {
+    background: rgba(68, 9, 231, 0.05);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    margin-top: 0px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: #e96363;
+    padding: 15px;
+    text-align: center;
+  }
+  .form-signin form {
+    padding: 20px;
+    width: 100%;
+    
+    
+
+  }
+  .form-signin form .btn {
+    background: rgba(226, 9, 9, 0.05);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    color: #fff;
+  }
+  .form-signin form .btn:hover, .form-signin form .btn:focus {
+    background: rgba(230, 14, 14, 0.1);
+    box-shadow: none;
+  }
+  .form-signin form .form-control:focus {
+    border-color: #106cc9;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-signin .form-control {
+    background: rgba(240, 239, 245, 0.9); 
+  }
+  .form-signin .form-check {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.65);
+  }
+  .form-signin .form-check label {
+    font-size: 0.9em;
+  }
+  .form-signin .form-check input {
+    margin-right: 0.5em;
+  }
+  .form-signin .form-check input:checked {
+    background-color: #77f30b;
+    border-color: #81c63f;
+  }
+  .form-signin .form-floating:focus-within {
+    z-index: 2;
+ }
+  
+ .form-signin input[type=text] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .form-signin input[type=password] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    height: 100%;
+    width: 100%;
+  }
